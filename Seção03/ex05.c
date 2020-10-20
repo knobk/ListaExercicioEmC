@@ -1,3 +1,5 @@
+// Leia um número real e  mostre a quinta parte deste número.
+
 #include <stdio.h>
 
 int main()

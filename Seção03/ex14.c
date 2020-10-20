@@ -1,3 +1,5 @@
+// Leia um ângulo em graus e apresente-o convert ido em radianos. A fórmula de conversão é: R = G * Pi /180, sendo G o ângul o em graus e R em radianos e Pi = 3,14.
+
 #include <stdio.h>
 
 int main()

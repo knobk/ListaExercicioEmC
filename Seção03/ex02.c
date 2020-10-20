@@ -1,3 +1,5 @@
+// Faça um programa que leia um número rea l e mostre seu valor.
+
 #include <stdio.h>
 
 int main()

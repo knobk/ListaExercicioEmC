@@ -1,3 +1,5 @@
+// Leia um número real e  mostre o resultado do quadrado desse número.
+
 #include <stdio.h>
 
 int main()
