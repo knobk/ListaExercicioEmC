@@ -7,6 +7,7 @@
 int main()
 {
     int n1, n2, i, aux, somaPares = 0, multiImpares = 1;
+    
     printf("Digite dois números: ");
     scanf("%d%d", &n1, &n2);
 
