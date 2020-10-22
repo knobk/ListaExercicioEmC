@@ -8,26 +8,30 @@
 
 int main()
 {
-    int nota = 0, cont = 1, media, soma = 0;
+    int nota = 0, cont = 0, media, soma = 0;
 
-    printf("Digite %dº nota: ", cont);
+    printf("Digite %dº nota: ", cont + 1);
     scanf("%d", &nota);
 
-    // if (nota < 10 || nota > 20)
-    // {
-    //     printf("Valor inválido\n");
-    // }
-
-    while (nota >= 10 && nota <= 20)
-    {   
-        cont++;
-        printf("Digite %dº nota: ", cont);
-        scanf("%d", &nota);
-        printf("%d\n", nota);
+    if (nota >= 10 && nota <= 20)
+    {
+        while (nota >= 10 && nota <= 20)
+        {
+            soma += nota;
+            cont++;
+            printf("Digite %dº nota: ", cont + 1);
+            scanf("%d", &nota);
+            if (nota > 20 || nota < 10)
+            {
+                printf("Valor inválido\n");
+            }
+        }
+        printf("Média das notas válidas: %d\n", soma / cont);
     }
-
-    //     soma += nota;
-    //     cont++;
+    else
+    {
+        printf("Valor inválido\n");
+    }
 
     return 0;
 }
