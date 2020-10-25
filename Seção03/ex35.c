@@ -1,18 +1,21 @@
-// Leia o valor do raio de um círculo e calcule e mostre a área do círculo
-// correspondente. A área do círculo é: Pi * R², onde R é o raio e Pi = 3,14.
+// Sejam a e b os catetos de um triângulo, onde a hipotenusa é obtida pela equação:
+// (hipotenusa)² = a² + b². Faça u m programa que receba os valores de a e b calcule
+// o valor da hipotenusa através da equação. Mostre o resultado dessa operação.
 
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    float area, r, pi = 3.14;
+    float a, b, h;
 
-    printf("Raio: ");
-    scanf("%f", &r);
+    printf("Informe os catetos A e B: ");
+    scanf("%f%f", &a, &b);
 
-    area = pi * r * r;
+    h = pow(a, 2) + pow(b, 2);
+    h = sqrt(h);
 
-    printf("Área do círculo: %f\n", area);
+    printf("Hipotenusa: %f \n", h);
 
     return 0;
 }
